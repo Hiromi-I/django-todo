@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts.apps.AccountsConfig',
     'taskmanager.apps.TaskmanagerConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,3 +122,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR /  'static']
+
+
+LOGIN_REDIRECT_URL = '/task/'
